@@ -1,0 +1,84 @@
+.reserve
+{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.235);
+    position: fixed;
+    top: 0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rContainer 
+{
+    background-color: white;
+    padding: 20px;
+    position: relative;
+
+}
+.rClose
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 23px;
+}
+.rItem
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+.rItemInfo
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5;
+}
+.rTitle
+{
+    font-weight: 500;
+}
+.rDesc
+{
+    font-weight: 300;
+
+}
+.rMax
+{
+    font-size: 12px;
+}
+.rPrice
+{
+    font-weight: 500;
+}
+
+.rButton 
+{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(12, 111, 225);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+}
+.rSelectRooms
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    font-size: 11px;
+    color: grey;
+}
+.room 
+{
+    display: flex;
+    flex-direction: column;
+}

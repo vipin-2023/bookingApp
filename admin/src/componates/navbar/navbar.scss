@@ -1,0 +1,33 @@
+.navBar {
+  height: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: .5px solid grey;
+  .wrapper {
+    min-width: 1024px;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      margin-left: 20px;
+      font-size: 1.4em;
+      color: blueviolet;
+    }
+    img {
+      widows: 40px;
+      height: 40px;
+      border: .3px solid rgba(137, 43, 226, 0.41);
+      border-radius: 50%;
+      margin-right: 50px;
+      cursor: pointer;
+    }
+  }
+}

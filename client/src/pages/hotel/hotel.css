@@ -1,0 +1,181 @@
+.hotelContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    gap: 5px;
+}
+
+.hotelWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.hotelImgWrapper {
+    width: 33%;
+    cursor: pointer;
+}
+
+.hotelImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hotelTitle {
+    font-size: 24px;
+}
+
+.hotelAddress {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hotelDistence {
+    font-weight: 500;
+    color: rgb(44, 125, 238);
+}
+
+.hotelPriceHighlight {
+    color: green;
+    font-weight: 500;
+}
+
+.hotelImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bookNow {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(12, 111, 225);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hotelDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hotelDetailsText {
+    flex: 3;
+}
+
+.hotelDetailsPrice {
+    flex: 1;
+    background-color: rgb(218 228 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: max-content;
+}
+
+.hotelDesc {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.hotelDetailsPrice>h1 {
+    font-size: 18px;
+    color: rgb(116, 116, 116);
+}
+
+.hotelDetailsPrice>span {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.hotelDetailsPrice>h2 {
+    font-weight: 300;
+}
+
+.hotelDetailsPrice>button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(12, 111, 225);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.slider {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-color:#b5b5b5;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+  
+}
+.sliderWrapper
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderImg
+{
+    width: 80%;
+    height: 80vh;
+    margin: 10px 0;
+    object-fit: cover;
+}
+.close
+{
+ position: absolute;
+ top: 20px;
+ right: 20px;
+ font-size: 30px;
+ color: white;   
+ cursor: pointer;
+}
+.arrow
+{
+    position: absolute;
+    top: 50%;
+    font-size: medium;
+    max-width: 20px;
+    font-size: 80px;
+    color: rgb(62, 62, 62);
+    cursor: pointer;
+  
+}
+.arrow:hover
+{
+    color: black;
+}
+.slider .left
+{
+    left: 30px;
+}
+.slider .right
+{
+    right: 30px;
+}

@@ -1,4 +1,4 @@
-import { Link} from "react-router-dom";
+import { Link, useLocation, useNavigate} from "react-router-dom";
 
 
 import "./searchItem.css";
@@ -6,17 +6,17 @@ import "./searchItem.css";
 function SearchItem({ item }) {
    console.log("...........item...............")
   console.log(item)
-  // const location = useLocation();
-  // console.log("..........................search")
-  // console.log(location)
+  const location = useLocation();
+  console.log("..........................search")
+  console.log(location)
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
  
 
-  // const handleSearch = () => {
-  //   navigate(`/hotels/${item._id}`);
-  // };
+  const handleSearch = () => {
+    navigate(`/hotel/${item._id}`);
+  };
 
   return (
     <div className="searchItem">

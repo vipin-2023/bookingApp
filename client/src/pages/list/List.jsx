@@ -30,20 +30,20 @@ const location =useLocation()
 
 
   const [destination, setDestination] = useState(fistLetterUpperCase(location.state.destination));
+
   const [date, setDate] = useState(location.state.date);
   const [openDate, setOpenDate] = useState(false);
   const [options, setOptions] = useState(location.state.options);
   const [min, setMin] = useState(undefined);
   const [max, setMax] = useState(undefined);
-  const { data, loading, error,reFetch } = useFetch(`/hotels?city=${destination}&min=${min || 0}&max=${max || 10000}`);
+  const { data, loading, error,reFetch } = useFetch(`/hotel?city=${destination}&min=${min || 0}&max=${max || 10000}`);
 
 
 
   const handleClick = ()=>{
     reFetch()
   }
-  console.log(destination)
-  console.log(data)
+  
   return (
     <div>
       <Navbar />

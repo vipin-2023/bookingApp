@@ -1,0 +1,13 @@
+# Dependency directories
+/node_modules
+/client/node_modules
+/admin/node_modules
+
+/back-end/node_modules
+
+# Build output
+/client/build
+/server/build
+
+# Environment file
+/back-end/.env

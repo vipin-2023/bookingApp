@@ -22,6 +22,7 @@ import "./hotel.css";
 function Hotel() {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
+  console.log(id);
   const { user } = useContext(AuthContext);
   const [sliderNumber, setSliderNumber] = useState(0);
   const [open, setOpen] = useState(false);
@@ -29,7 +30,7 @@ function Hotel() {
 
   const navigate =useNavigate()
 
-  const { data, loading, error, reFetch } = useFetch(`/hotels/find/${id}`);
+  const { data, loading, error, reFetch } = useFetch(`/hotel/find/${id}`);
 
   const {dates,options}=useContext(SearchContext);
 

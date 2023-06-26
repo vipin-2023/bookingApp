@@ -54,7 +54,7 @@ function Header({ type }) {
 
   const handleSearch = () => {
     dispatch({type:"NEW_SEARCH",payload:{destination:destination,dates:date,options:options}})
-    navigate("/hotels",{state:{ destination, date, options }});
+    navigate("/hotel",{state:{ destination, date, options }});
   };
   return (
     <div className="header">

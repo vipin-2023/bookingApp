@@ -8,7 +8,7 @@ function Navbar() {
     <div className="navbar">
       <div className="navContainer">
         <Link to="/" className="linkHome">
-          <span className="logo">vipin Booking.com</span>
+          <span className="logo">Stay.com</span>
         </Link>
 
         {user?user.username:(<div className="navItems">
